@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+    -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --Dark-yan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --kumbh-font-family: 'Kumbh Sans', sans-serif;
+}
+body{
+  background-color: var(--Dark-yan);
+  height: 100vh;
+  font-family: var(--kumbh-font-family);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 51.85vw bottom 35vh, left 48vw top 52.5vh;
+}
+main{
+    margin: 0 auto;
+}
+p, span{
+    color: var(--Dark-gray);
+    margin-top: .6rem;
+    font-weight: 500;
+}
+h2, h1{
+    color: var(--Very-dark-desaturated-blue);
+}
+.cardcontainer{
+    background: white;
+    max-width: 35vw;
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 2rem 4rem -10px var(--Dark-grayish-blue);
+          box-shadow: 0 2rem 4rem -10px var(--Dark-grayish-blue);
+}
+.card_content{
+    text-align: center;
+}
+.user_image{
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: -3.6rem;
+}
+.username{
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.city{
+    color: var(--Dark-grayish-blue);
+    margin-top: .5rem;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.stats{
+    display: inline-flex;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+hr{
+    
+}
+.content_likes{
+    margin-left: 3rem;
+}
+.content_photos{
+    margin-left: 3rem;
+}
+.attribution{
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+.attribution a{
+    text-decoration: none;
+}
